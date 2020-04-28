@@ -85,4 +85,9 @@ ul, ol{
     height: 110px;
     font-size: 40px;
     align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.blk1{
+    width: 180px;
 }
