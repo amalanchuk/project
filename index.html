@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -57,7 +61,82 @@
         <!--Основные сферы деятельности-->
         <!--Слайдер-->
         <div class="slider">
+            <div class="item">
+                <img src="images/img_1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/img_2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/img_3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/img_4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/img_5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="images/img_6.jpg" alt="">
+            </div>
+            <!-- <div id="slider_back" style="position: relative;">
+                <img src="images/tablet_back_1.jpg" alt="er" id="img_back_tablet">
+                <div id="slider_img_dark_back_tablet"></div>
+            </div>
             
+            <div id="slider">
+                <div    id="slider_info_1_tablet">До реставрации</div>
+                <div id="slider_info_2_tablet">После реставрации</div>
+                
+                <div id="slider_elips_1_tablet"></div>
+                <div id="slider_elips_2_tablet"></div>
+                <div id="slider_elips_3_tablet"></div>
+                <div id="selested_slider_1_tablet"></div>
+                <img src="images/img_1.jpg" alt="" id="slide_1_tablet" style="display: block;">
+                <img src="images/img_2.jpg" alt="" id="slide_2_tablet" style="display: block;">
+                <img src="images/img_3.jpg" alt="" id="slide_3_tablet" style="display: none;">
+                <img src="images/img_4.jpg" alt="" id="slide_4_tablet" style="display: none;">
+                <img src="images/img_5.jpg" alt="" id="slide_5_tablet" style="display: none;">
+                <img src="images/img_6.jpg" alt="" id="slide_6_tablet" style="display: none;">
+                <script>
+                    var do_r='До реставрации'
+                    var posle_r='После реставрации'
+                    slider_elips_1_tablet.onclick=function(){
+                        selested_slider_1_tablet.style.left="43vw"
+                        slide_1_tablet.src="img_1.jpg"
+                        slide_2_tablet.src="img_2.jpg"
+                        /**/slider_elips_1_tablet.style.borderColor="yellow"
+                        slider_elips_1_tablet.style.backgroundColor="yellow"
+                        /**/slider_elips_2_tablet.style.borderColor="rgb( 241, 241, 241 )"
+                        slider_elips_2_tablet.style.backgroundColor="rgb( 241, 241, 241 )"
+                        /**/slider_elips_3_tablet.style.borderColor="rgb( 241, 241, 241 )"
+                        slider_elips_3_tablet.style.backgroundColor="rgb( 241, 241, 241 )"
+                    }
+                    slider_elips_2_tablet.onclick=function(){
+                        selested_slider_1_tablet.style.left="47vw"
+                        slide_1_tablet.src="img_3.jpg"
+                        slide_2_tablet.src="img_4.jpg"
+                        /**/slider_elips_1_tablet.style.borderColor="rgb( 241, 241, 241 )"
+                        slider_elips_1_tablet.style.backgroundColor="rgb( 241, 241, 241 )"
+                        /**/slider_elips_2_tablet.style.borderColor="yellow"
+                        slider_elips_2_tablet.style.backgroundColor="yellow"
+                        /**/slider_elips_3_tablet.style.borderColor="rgb( 241, 241, 241 )"
+                        slider_elips_3_tablet.style.backgroundColor="rgb( 241, 241, 241 )"
+            
+                    }
+                    slider_elips_3_tablet.onclick=function(){
+                        selested_slider_1_tablet.style.left="51vw"
+                        slide_1_tablet.src="img_5.jpg"
+                        slide_2_tablet.src="img_6.jpg"
+                        /**/slider_elips_1_tablet.style.borderColor="rgb( 241, 241, 241 )"
+                        slider_elips_1_tablet.style.backgroundColor="rgb( 241, 241, 241 )"
+                        /**/slider_elips_2_tablet.style.borderColor="rgb( 241, 241, 241 )"
+                        slider_elips_2_tablet.style.backgroundColor="rgb( 241, 241, 241 )"
+                        /**/slider_elips_3_tablet.style.borderColor="yellow"
+                        slider_elips_3_tablet.style.backgroundColor="yellow"
+                    }
+                </script>
+            </div> -->
         </div>
     <!--Слайдер-->
     <!--Decision-->
@@ -105,8 +184,21 @@
             </ul></div>
     </div>
     <div class="contacts"></div>
-    <h4 class="contact">КОНТАКТЫ</h4>
-    <div class="cblock1"><div class="ctc"><li class="tell">+380686044626 <di class="name">(Валерий)</div></li><img class="viberlogo" src="images/viber (1).png" alt="Image not found"><li class="tell1">+380689540699 <di class="name">(Елена)</div></li></div></div>
+    <h4 class="contact rem">КОНТАКТЫ</h4>
+    <div class="cblock1">
+        <ul class="ctc">
+            <li class="tell">
+                <a href="tel:+380686044626">+380686044626</a>
+                <span class="name">(Валерий)</span>
+            </li>
+            
+            <li class="tell">
+                <img class="viberlogo" src="images/viber (1).png" alt="Image not found">
+                <a href="tel:+380689540699">+380689540699</a>
+                <span class="name">(Елена)</span>
+            </li>
+        </ul>
+    </div>
 </div>
 <!--Contacts-->
 <!--Footer-->
