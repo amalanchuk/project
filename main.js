@@ -5,17 +5,18 @@ jQuery(function() {
 function slickSlider() {
     jQuery('.slider').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     arrow: false,
     speed: 300,
+    // variableWidth: true,
     slidesToShow: 2,
     slidesToScroll: 2,
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
